@@ -1,0 +1,11 @@
+START: MOV A, 5
+       ADD B
+       JMP START
+LOOP: MOV B, 10 
+      CMP A, B
+      JNE END
+MOV C, A  
+MUL B     
+JMP START 
+
+END: MOV A, 0 
